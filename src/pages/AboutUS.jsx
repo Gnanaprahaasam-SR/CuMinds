@@ -54,39 +54,20 @@ const AboutUs = () => {
 
   return (
     <div className="about-us-container aboutUs " style={{ overflowX: 'hidden' }}>
+
       {/* Header Section */}
-      <div
-        className="header-section  mt-5  px-5 container"
-        style={{
-          padding: '50px 20px',
-          backgroundImage: `url('/path/to/your/background-image.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <p className="animate__animated animate__fadeInDown title">ABOUT US</p>
-        <div className="animate__animated animate__fadeInDown animate__delay-1s sub-title">CuMinds Innovations</div>
-        <div className="animate__animated animate__fadeInDown animate__delay-2s sub-title">Think Simple, Do Big!</div>
+      <div className="aboutUs-heroSection py-5">
+        <div className="header-section container">
+          <p className="animate__animated animate__fadeInDown title text-white">ABOUT US</p>
+          <div className="animate__animated animate__fadeInDown animate__delay-1s sub-title text-white">CuMinds Innovations</div>
+          <div className="animate__animated animate__fadeInDown animate__delay-2s sub-title text-white">Think Simple, Do Big!</div>
+        </div>
       </div>
 
       {/* Mission & Vision Section */}
-      <div
-        className="mission-vision-section position-relative"
-        style={{
-          minHeight: '200px',
-          backgroundColor: 'var(--primary-lite-color)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          textAlign: 'center',
-          color: 'white',
-          padding: '50px 20px',
-          position: 'relative',
-        }}
-      >
-        <div className="overlay-text position-absolute top-50 start-50 translate-middle">
-          <h1 className="animate__animated animate__fadeInUp">Mission & Vision</h1>
+      <div className="" style={{ backgroundColor: "var(--background-color)" }}>
+        <div className="container py-5 ">
+          <h1 className="animate__animated animate__fadeInUp text-center fw-bold" style={{ color: "var(--primary-lite-color)" }}>Mission & Vision</h1>
           <p className="animate__animated animate__fadeInUp animate__delay-1s font-color">
             Discovering the knowledge you need can be challenging in a world of data & information. At CuMinds, a knowledge-as-a-solution provider (KaaS), aims to provide simple, effective, and creative solutions for real-world business challenges that help individuals and healthcare/pharma companies.
           </p>
@@ -98,7 +79,7 @@ const AboutUs = () => {
         <div className="row justify-content-center">
           <h2 className="text-center animate__animated animate__fadeInUp font-color py-2  pt-3 fw-bold">CuMinds Offerings</h2>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center g-3">
           <div className="col-md-4 font-color">
             <OfferingCard
               title="Learn & Grow"
@@ -113,7 +94,7 @@ const AboutUs = () => {
               description="Consulting that lets you seek advice, information, or guidance from knowledgeable professionals."
               imageSrc={explore}
               animateClass={cardsAnimation[1]}
-        
+
             />
           </div>
           <div className="col-md-4 font-color">

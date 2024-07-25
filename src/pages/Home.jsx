@@ -19,9 +19,9 @@ const cardItems = [
     icon: <Book fontSize={30} />,
     image: learn,
     title: "Learn & Grow",
-    
+
     description: "Master the ever-evolving landscape of clinical research, healthcare, data science, and AI with L&G. Our platform offers concise, topic-specific video/visual presentations designed for efficient learning.",
-    link: "/learnandgrow"
+    link: "/"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const cardItems = [
     image: explore,
     title: "Explore & Gain",
     description: "We offer building comprehensive suite of knowledge-based applications specifically designed for the healthcare and clinical trial landscape. Tackle complex challenges and explore the frontiers of knowledge with tools tailored for researchers and scientists.",
-    link: "/exploreandgain"
+    link: "/aboutUs"
 
   },
   {
@@ -38,7 +38,7 @@ const cardItems = [
     image: solution,
     title: "Ask & Solve",
     description: "Get personalized advice, information, and guidance on clinical trials and healthcare. Leverage our network's expertise to tackle specific challenges.",
-    link: "/askandsolve"
+    link: "/service"
 
   },
   {
@@ -47,7 +47,7 @@ const cardItems = [
     image: knowledgeHub,
     title: "Knowledge Hub",
     description: "We offer a powerful combination of a knowledge hub and a dynamic blog, designed to quench your thirst for knowledge and keep you at the forefront of the latest trends.",
-    link: "/knoeledgehub"
+    link: "/blog"
 
   }
 ];
@@ -73,8 +73,8 @@ const Home = () => {
         <div className="row">
           {cardItems.map((item, index) => (
             <div key={index} className="col-md-3 col-sm-12 g-4 position-relative">
-              <div className={`card-item card-item-${index+1} shadow`}>
-                <img src={item.image} alt={item.title} className={`w-100 `}/>
+              <div className={`card-item card-item-${index + 1} shadow`}>
+                <img src={item.image} alt={item.title} className={`w-100 card-image `} />
                 <div className={`card-content card-content-${index + 1}`}>
                   <span className="card-icon px-2">{item.icon}</span>
                   <b className="card-item-title px-2">{item.title}</b>
@@ -263,10 +263,11 @@ const Home = () => {
                     <b className="description">Data to Intelligence: How AI Empowers RWD for Target Disease Selection
                     </b>
                     <div className="d-flex justify-content-end">
-                      <button className="button-secondary " style={{ padding: "5px 20px" }}>Read More</button>
+                      <Link to={"/blog/1"} className="text-decoration-none">
+                        <button className="button-secondary " style={{ padding: "5px 20px" }}>Read More</button>
+                      </Link>
                     </div>
                   </div>
-
                 </div>
               </div>
               <div className="col-md-4 my-3">
@@ -278,7 +279,9 @@ const Home = () => {
                     <div className="date">13 DECEMBER, 2023</div>
                     <b className="description">Generative AI in Clinical Trials: A Revolutionizing Force </b>
                     <div className="d-flex justify-content-end">
-                      <button className="button-secondary " style={{ padding: "5px 20px" }}>Read More</button>
+                      <Link className="text-decoration-none" to={"/blog/2"}>
+                        <button className="button-secondary " style={{ padding: "5px 20px" }}>Read More</button>
+                      </Link>
                     </div>
                   </div>
 

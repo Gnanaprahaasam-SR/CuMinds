@@ -13,18 +13,19 @@ const formatDate = (dateStr) => {
 
 const Blog1 = ({ blog }) => {
     return (
-        <div className='container-fluid mt-5 pt-3'>
+        <div className='container-fluid  pt-3'>
             <div className='row'>
                 <div className='col-md-3 p-lg-4 d-flex p-md-3 blog-sidebar d-none d-sm-none d-md-block overflow-hidden'>
-                    <div className='pt-5'>
-                        <a href={`#${blog?.breifNote?.title}`} className='text-decoration-none text-white'>
-                            <h6 className='fw-bold'>{blog?.breifNote?.title}</h6>
+                    <div className=''>
+                        <h4 className=' pb-3 '>{blog.maintitle}</h4>
+                        <a href={`#${blog?.breifNote?.title.replace(/\s+/g, '-')}`} className='text-decoration-none text-white'>
+                            <p className='fw-bold'>{blog?.breifNote?.title}</p>
                         </a>
                         <hr />
                         {blog?.breifNote?.topics.map((topic, index) => (
                             <div key={index}>
-                                <a href={`#${topic?.subTopic}`} className='text-decoration-none text-white'>
-                                    <h6 className='fw-bold'>{topic?.subTopic}</h6>
+                                <a href={`#${topic?.subTopic.replace(/\s+/g, '-')}`} className='text-decoration-none text-white'>
+                                    <p className='fw-bold'>{topic?.subTopic}</p>
                                 </a>
                                 <hr />
                             </div>
@@ -48,14 +49,14 @@ const Blog1 = ({ blog }) => {
                             <ul key={index} dangerouslySetInnerHTML={{ __html: point }} />
                         ))}
                         <p className='mb-2'>{blog?.introduction?.note}</p>
-                        <h5 className='fw-bold' id={blog?.breifNote?.title}>{blog?.breifNote?.title}</h5>
+                        <h5 className='fw-bold' id={blog?.breifNote?.title.replace(/\s+/g, '-')}>{blog?.breifNote?.title}</h5>
                         <p>{blog?.breifNote?.description}</p>
                         {blog?.breifNote?.type.map((type, index) => (
                             <p key={index} dangerouslySetInnerHTML={{ __html: type }} />
                         ))}
                         {blog?.breifNote?.topics.map((topic, index) => (
-                            <div key={index} >
-                                <h5 className='fw-bold' id={topic?.subTopic}>{topic?.subTopic}</h5>
+                            <div key={index} id={topic?.subTopic.replace(/\s+/g, '-')} >
+                                <h5 className='fw-bold' >{topic?.subTopic}</h5>
                                 <p>{topic?.title}</p>
                                 {topic?.keypoints.map((keypoint, index) => (
                                     <ul key={index} dangerouslySetInnerHTML={{ __html: keypoint }} />
@@ -73,14 +74,15 @@ const Blog1 = ({ blog }) => {
 
 const Blog2 = ({ blog }) => {
     return (
-        <div className='container-fluid mt-5 pt-3'>
+        <div className='container-fluid  pt-3'>
             <div className='row'>
                 <div className='col-md-3 p-lg-4 d-flex p-md-3 blog-sidebar d-sm-none d-md-block'>
-                    <div className='pt-5'>
+                    <div className=''>
+                        <h4 className=' pb-3 '>{blog.maintitle}</h4>
                         {blog?.breifNote?.topics.map((topic, index) => (
                             <div key={index}>
                                 <a href={`#${topic?.title.replace(/\s+/g, '-')}`} className='text-decoration-none text-white'>
-                                    <h6 className='fw-bold'>{topic?.title}</h6>
+                                    <p className='fw-bold'>{topic?.title}</p>
                                 </a>
                                 <hr />
                             </div>
@@ -101,8 +103,8 @@ const Blog2 = ({ blog }) => {
                     <div>
                         <p>{blog?.introduction}</p>
                         {blog?.breifNote?.topics.map((topic, index) => (
-                            <div key={index} >
-                                <h5 className='fw-bold' id={topic?.title.replace(/\s+/g, '-')}>{topic?.title}</h5>
+                            <div key={index} id={topic?.title.replace(/\s+/g, '-')}>
+                                <h5 className='fw-bold' >{topic?.title}</h5>
                                 <p>{topic?.description}</p>
                                 {topic?.keypoints?.map((keypoint, kpIndex) => (
                                     <ul key={kpIndex} dangerouslySetInnerHTML={{ __html: keypoint }} />
@@ -120,14 +122,15 @@ const Blog2 = ({ blog }) => {
 
 const Blog3 = ({ blog }) => {
     return (
-        <div className='container-fluid mt-5 pt-3'>
+        <div className='container-fluid '>
             <div className='row'>
                 <div className='col-md-3 p-lg-4 d-flex p-md-3 blog-sidebar d-sm-none d-md-block'>
-                    <div className='pt-5'>
+                    <div className=''>
+                        <h4 className=' pb-3 '>{blog.maintitle}</h4>
                         {blog?.breifNote?.topics.map((topic, index) => (
                             <div key={index}>
                                 <a href={`#${topic?.title.replace(/\s+/g, '-')}`} className='text-decoration-none text-white'>
-                                    <h6 className='fw-bold'>{topic?.title}</h6>
+                                    <p className='fw-bold'>{topic?.title}</p>
                                 </a>
                                 <hr />
                             </div>
@@ -148,8 +151,8 @@ const Blog3 = ({ blog }) => {
                     <div>
                         <p>{blog?.introduction}</p>
                         {blog?.breifNote?.topics.map((topic, index) => (
-                            <div key={index} >
-                                <h5 className='fw-bold' id={topic?.title.replace(/\s+/g, '-')}>{topic?.title}</h5>
+                            <div key={index} id={topic?.title.replace(/\s+/g, '-')}>
+                                <h5 className='fw-bold' >{topic?.title}</h5>
                                 <p>{topic?.description}</p>
                                 {topic?.keypoints?.map((keypoint, kpIndex) => (
                                     <ul key={kpIndex} dangerouslySetInnerHTML={{ __html: keypoint }} />
