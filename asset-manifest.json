@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cuMinds/static/css/main.e9646b68.css",
-    "main.js": "/cuMinds/static/js/main.473eb09d.js",
+    "main.css": "/cuMinds/static/css/main.94363a96.css",
+    "main.js": "/cuMinds/static/js/main.80656696.js",
     "static/js/453.0d97c7d9.chunk.js": "/cuMinds/static/js/453.0d97c7d9.chunk.js",
     "static/media/library.jpg": "/cuMinds/static/media/library.82d2afb00ea9e031ced9.jpg",
     "static/media/service.jpg": "/cuMinds/static/media/service.4512b0d29aa2e1b338a2.jpg",
@@ -13,6 +13,7 @@
     "static/media/askSolution.jpg": "/cuMinds/static/media/askSolution.a4842685f55c7c5c9f5d.jpg",
     "static/media/student-sitting.jpg": "/cuMinds/static/media/student-sitting.e8d7734d33f08acff64f.jpg",
     "static/media/new-vision.jpg": "/cuMinds/static/media/new-vision.cc2bf72de19b05aeccc0.jpg",
+    "static/media/heroSection.gif": "/cuMinds/static/media/heroSection.acb7b870058d1689d51d.gif",
     "static/media/datascience-top.png": "/cuMinds/static/media/datascience-top.7132214ebced40e1f33b.png",
     "static/media/Blog2.png": "/cuMinds/static/media/Blog2.611e686bfdaf4c4f66a7.png",
     "static/media/Blog3.png": "/cuMinds/static/media/Blog3.687e2372122895a52a05.png",
@@ -22,12 +23,12 @@
     "static/media/revicons.ttf": "/cuMinds/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/cuMinds/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/cuMinds/index.html",
-    "main.e9646b68.css.map": "/cuMinds/static/css/main.e9646b68.css.map",
-    "main.473eb09d.js.map": "/cuMinds/static/js/main.473eb09d.js.map",
+    "main.94363a96.css.map": "/cuMinds/static/css/main.94363a96.css.map",
+    "main.80656696.js.map": "/cuMinds/static/js/main.80656696.js.map",
     "453.0d97c7d9.chunk.js.map": "/cuMinds/static/js/453.0d97c7d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9646b68.css",
-    "static/js/main.473eb09d.js"
+    "static/css/main.94363a96.css",
+    "static/js/main.80656696.js"
   ]
 }
